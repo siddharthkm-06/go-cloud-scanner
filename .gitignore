@@ -1,0 +1,15 @@
+# Compiled Go binaries and packages
+*.exe
+*.dll
+*.so
+
+# Go cache and test files
+/pkg/
+/bin/
+
+# Dependencies cache
+vendor/
+
+# Operating system files
+.DS_Store
+Thumbs.db

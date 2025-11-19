@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "gcp-001",
+    "Type": "STORAGE_BUCKET",
+    "Name": "mercad-prod-user-photos",
+    "IsPublic": true,
+    "Tags": [
+      "production",
+      "user_data"
+    ],
+    "ComplianceScore": 50,
+    "Violations": [
+      {
+        "RuleID": "SEC_R01",
+        "Description": "Publicly exposed storage bucket.",
+        "Severity": "CRITICAL"
+      }
+    ]
+  },
+  {
+    "ID": "gcp-002",
+    "Type": "VM_INSTANCE",
+    "Name": "mercad-dev-worker-01",
+    "IsPublic": false,
+    "Tags": [
+      "development",
+      "no_pii"
+    ],
+    "ComplianceScore": 70,
+    "Violations": [
+      {
+        "RuleID": "TAG_R02",
+        "Description": "Missing essential 'production' tag for classification.",
+        "Severity": "HIGH"
+      }
+    ]
+  }
+]
