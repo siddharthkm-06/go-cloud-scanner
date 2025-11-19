@@ -1,9 +1,9 @@
 package main
 
 import (
-	"encoding/json" // New package for JSON handling
+	"encoding/json" 
 	"fmt"
-	"os" // New package for file I/O
+	"os" 
 )
 
 // Asset represents a generic cloud resource we want to scan.
@@ -102,7 +102,7 @@ func generateReport(assets []Asset) {
 		return
 	}
 
-	// Marshal the struct into a JSON byte slice
+
 	jsonData, err := json.MarshalIndent(failedAssets, "", "  ")
 	if err != nil {
 		fmt.Printf("Error marshalling JSON: %v\n", err)
@@ -147,6 +147,5 @@ func main() {
 
 	fmt.Println("-------------------------------------------------------")
 
-	// Generate the professional JSON report
 	generateReport(assets)
 }
