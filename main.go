@@ -116,7 +116,7 @@ func generateReport(assets []Asset) {
 		return
 	}
 
-	fmt.Printf("✅ Detailed report for %d failed assets written to: compliance_report.json\n", len(failedAssets))
+	fmt.Printf("Detailed report for %d failed assets written to: compliance_report.json\n", len(failedAssets))
 }
 
 func main() {
